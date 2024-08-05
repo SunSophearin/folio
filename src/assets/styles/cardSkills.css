@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.container-fluid{
+    /* margin-bottom: 80px; */
+}
+.map{
+   height: 550px;
+   position: relative;
+}
+.map img{
+   width: 100%;
+   /* height: 300px; */
+   height: 100%;
+}
+.pin{
+   position: absolute;
+   top: 77%;
+   left: 54%;
+}
+
+@keyframes pulsate {
+   0% {
+     transform: scale(1);
+     opacity:0.8;
+   }
+   45% {
+     transform: scale(1.75);
+     opacity:0;
+   }
+ }
+ @keyframes stop-pulsate {
+   from {
+     opacity:0.4;
+   }
+   to {
+     transform: scale(2);
+     opacity:0;
+   }
+ }
+ 
+ /* Button */
+ .btn-pulse {
+   position:absolute;
+   top:50%;
+   left:50%;
+   
+   .circle {
+     position:absolute;
+     left:50%;
+     top:50%;
+     width:32px;
+     height:32px;
+     margin: -0.666em auto auto -0.666em;
+     /* background:rgba(237,0,72,1); */
+     background-color: white;
+      border-radius:50%;
+     opacity:0.6;
+     transform-origin: 50% 50%;
+     transition:opacity .2s ease-in, transform .1s ease-out;
+     color:white;
+     font-size:1.5em;
+     padding:0;
+     text-align:center;
+     line-height:32px;
+     overflow:hidden;
+     &:hover {
+       opacity:0.8;
+       cursor:pointer;
+     }
+     &:active {
+       transform:scale(0.875);
+     }
+   }
+   
+   .ring {
+     display:block;
+     position:absolute;
+     top:50%;
+     left:50%;
+     width:2em;
+     height:2em;
+     margin:-1em auto auto -1em;
+     transform-origin: 50% 50%;
+     border-radius:50%;
+     border:1px solid white;
+     opacity:0;
+     animation: pulsate 3s ease-out infinite;
+   }
+   
+   &:hover .ring {
+       animation: none;
+     }
+   
+   &:active .ring {
+       animation: stop-pulsate 0.3s;
+     }
+ }
+ 
+
+
+.pin img{
+   width: 50px;
+}
+.container-card{
+   /* margin-block: 240px; */
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myskill{
+   width: 100%;
+}
+.myskill h1{
+   padding-top: 40px;
+   width: 100%;
+   text-align: center;
+   font-size: 40px;
+   font-family: "Playfair Display", serif;
+   font-weight: bold;
+}
+.wrapper {
+    /* position: relative; */
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.neptune-container {
+   position: absolute;
+   /* width: 100%;
+   height: 100%; */
+   height: 850px;
+   width: 850px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.neptune-container > img {
+height: 50px;
+width: 50px;
+animation: neptune-rotation 53954ms linear infinite;
+}
+
+.uranus-container {
+   position: absolute;
+   height: 750px;
+   width: 750px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.uranus-container > img {
+   height: 75px;
+   width: 75px;
+   animation: uranus-rotation 37054ms linear infinite;
+}
+
+.saturn-container {
+   position: absolute;
+   height: 600px;
+   width: 600px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.saturn-container > img {
+   height: 75px;
+   width: 75px;
+   animation: saturn-rotation 33218ms linear infinite;
+}
+
+.jupiter-container {
+   position: absolute;
+   height: 500px;
+   width: 500px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.jupiter-container > img {
+   height: 75px;
+   width: 75px;
+   animation: jupiter-rotation 27339ms linear infinite;
+}
+
+.mars-container {
+   position: absolute;
+   height: 348px;
+   width: 348px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px dashed black;   
+}
+
+.mars-container > img {
+   height: 35px;
+   width: 35px;
+   animation: mars-rotation 9s linear infinite;
+}
+
+.earth-container {
+   position: absolute;
+   height: 265px;
+   width: 265px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px dashed black;   
+}
+
+.earth-container > img {
+   height: 35px;
+   width: 35px;
+   animation: earth-rotation 8s linear infinite;
+}
+.earth2-container {
+   position: absolute;
+   height: 265px;
+   width: 265px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.earth2-container > img {
+   height: 25px;
+   width: 25px;
+   border-radius: 100%;
+   overflow: hidden;
+   animation: earth2-rotation 8s linear infinite;
+}
+.venus-container {
+   position: absolute;
+   height: 205px;
+   width: 205px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px dashed black;   
+   
+}
+
+.venus-container > img {
+   display: block;
+   height: 30px;
+   width: 30px;
+   border-radius: 100%;
+   animation: venus-rotation 7s linear infinite;
+}
+.venus2-container {
+   position: absolute;
+   height: 205px;
+   width: 205px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.venus2-container > img {
+   display: block;
+   height: 30px;
+   width: 30px;
+   border-radius: 100%;
+   animation: venus2-rotation 7s linear infinite;
+}
+.mercury-container {
+   position: absolute;
+   height: 150px;
+   width: 150px;
+   border-radius: 100%;
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   border: 1px dashed black;   
+   
+}
+
+.mercury-container > img {
+   display: block;
+   height: 35px;
+   width: 35px;
+   /* animation: mercury-rotation 9768ms linear infinite; */
+   animation: mercury-rotation 5s linear infinite;
+}
+.mercury2-container {
+   position: absolute;
+   height: 150px;
+   width: 150px;
+   border-radius: 100%;
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   
+}
+.mercury2-container > img {
+   display: block;
+   height: 25px;
+   width: 25px;
+   /* animation: mercury-rotation 9768ms linear infinite; */
+   animation: mercury2-rotation 5s linear infinite;
+}
+
+.sun-container {
+   position: absolute;
+   height: 110px;
+   width: 110px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sun-container > img {
+   height: 110px;
+   width: 110px;
+   border-radius: 100%;
+   background-color: transparent;
+   pointer-events: none;
+}
+
+
+@keyframes neptune-rotation {
+    
+0% {
+   transform: rotate(0deg) translate(425px) rotate(0deg);
+}
+
+100% {
+   transform: rotate(360deg) translate(425px) rotate(360deg);
+ }
+}
+
+@keyframes uranus-rotation {
+
+0% {
+   transform: rotate(0deg) translate(375px) rotate(0deg);
+}
+   
+100% {
+    transform: rotate(360deg) translate(375px) rotate(360deg);
+ }
+}
+   
+@keyframes saturn-rotation {
+ 
+0% {
+    transform: rotate(0deg) translate(300px) rotate(0deg);
+ }
+      
+100% {
+    transform: rotate(360deg) translate(300px) rotate(360deg);
+  }
+ }
+      
+@keyframes jupiter-rotation {
+
+ 0% {
+ transform: rotate(0deg) translate(250px) rotate(0deg);
+}
+         
+100% {
+ transform: rotate(360deg) translate(250px) rotate(360deg);
+  }
+ }
+         
+ @keyframes mars-rotation {
+
+0% {
+transform: rotate(0deg) translate(170px) rotate(0deg);
+  }
+           
+100% {
+transform: rotate(360deg) translate(170px) rotate(360deg);
+  }
+ }
+            
+ @keyframes earth-rotation {
+
+0% {
+transform: rotate(0deg) translate(130px) rotate(0deg);
+    }
+              
+100% {
+transform: rotate(360deg) translate(130px) rotate(360deg);
+    }
+ }
+ @keyframes earth2-rotation {
+
+   0% {
+   transform: rotate(360deg) translate(130px) rotate(360deg);
+       }
+                 
+   100% {
+   transform: rotate(0deg) translate(130px) rotate(0deg);
+       }
+    }              
+ @keyframes venus-rotation {
+
+   0% {
+   transform: rotate(0deg) translate(105px) rotate(0deg);
+       }
+                 
+   100% {
+   transform: rotate(360deg) translate(105px) rotate(360deg);
+       }
+    }
+   @keyframes venus2-rotation {
+
+   0% {
+   transform: rotate(360deg) translate(105px) rotate(360deg);
+         }
+                  
+   100% {
+   transform: rotate(0deg) translate(105px) rotate(0deg);
+         }
+      }                  
+               
+ @keyframes mercury-rotation {
+
+   0% {
+   transform: rotate(0deg) translate(75px) rotate(0deg);
+       }
+                 
+   100% {
+   transform: rotate(360deg) translate(75px) rotate(360deg);
+       }
+    }
+    @keyframes mercury2-rotation {
+
+      0% {
+      transform: rotate(360deg) translate(75px) rotate(360deg);
+          }
+                    
+      100% {
+      transform: rotate(0deg) translate(75px) rotate(0deg);
+          }
+       }
+
+ @media (min-width: 6px) and (max-width: 575.98px) {
+   .map{
+      height: 330px;
+   }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /* .mercury-container {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;   
+     }
+     
+     .mercury-container > img {
+        height: 35px;
+        width: 35px;
+        animation: mercury-rotation 9768ms linear infinite;
+     }
+    @keyframes mercury-rotation {
+
+        0% {
+        transform: rotate(0deg) translate(125px) rotate(0deg);
+            }
+                      
+        100% {
+        transform: rotate(360deg) translate(125px) rotate(360deg);
+            }
+         } */
+}

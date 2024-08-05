@@ -1,0 +1,70 @@
+.container-leftMenu{
+    width: 50%;
+    height: 100%;
+    position:fixed ;
+    z-index: 2000;
+    left: -50%;
+    top: 44px;
+    background-color: #EEEEEE;
+    border-radius: 0px 10px 10px 10px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.container-leftMenu ul{
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+.container-leftMenu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    color: black;
+    font-family: "Playfair Display", serif;
+}
+.container-leftMenu ul:hover>:not(:hover){
+    opacity: .4;
+}
+.container-leftMenu ul li a:hover{
+    color: #FF8F00;
+}
+.container-leftMenu ul li a.router-link-active{
+    color: #FF8F00;
+    opacity: 2;
+}
+.showLeftmenu{
+    left: 0;
+}
+.rights{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+}
+.rights p{
+    text-align: center;
+    font-size: 11px;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .container-leftMenu{
+        top: 52px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-leftMenu{
+        top: 68px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

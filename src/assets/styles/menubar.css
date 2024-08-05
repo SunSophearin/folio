@@ -1,0 +1,207 @@
+.container-fluid{
+    /* background-color: #EEEEEE; */
+    position: fixed;
+    z-index: 2000;
+}
+.container-menu{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+.container-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.container-menu ul.logo li h1{
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    color: #ff8f00;
+    transition: .5s;
+}
+.container-menu ul.menu-box{
+    display: flex;
+}
+.container-menu ul.menu-box li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    transition: .5s;
+}
+.container-menu ul.menu-box li a.router-link-active{
+    color: #FF8F00 !important;
+    transition: .5s;
+}
+.container-menu ul.menu-box li img{
+    width: 40px;
+    object-fit: cover;
+    transition: .5s;
+}
+.container-menu ul.menu-box li a:hover{
+    color: #FF8F00;
+}
+.container-menu ul.sub-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.container-menu ul.sub-menu li img{
+    display: block;
+    width: 30px;
+    object-fit: cover;
+    transition: .5s;
+}
+.container-menu ul.sub-menu li i{
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    /* border-radius: 50%; */
+}
+.container-menu ul.sub-menu li i:hover{
+    background-color: gray;
+    border-radius: 50%;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .container-menu ul.menu-box{
+        display: none;
+    }
+    .container-menu ul.logo li h1{
+        font-size: 36px;
+    }
+    .changeLogo{
+        stroke: black !important;
+    }
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-menu ul.menu-box{
+        display: none;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+    }
+    .container-menu ul.logo li h1{
+        font-size: 36px;
+    }
+    .changeLogo{
+        stroke: black !important;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container-menu ul.sub-menu{
+        display: none;
+    }
+    .container-menu ul.menu-box{
+        display: flex;
+    }
+    .container-fluid{
+        padding: 2px;
+    }
+    .container-menu ul.logo li h1{
+        font-size: 40px;
+    }
+    .changeLogo{
+        stroke: black !important;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container-menu ul.sub-menu{
+        display: none;
+    }
+    .container-menu{
+        padding: 2px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container-menu ul.sub-menu{
+        display: none;
+    }
+}
+
+
+
+
+
+.bar{
+   padding: 0;
+   margin: 0; 
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .changeBg{
+    background-color: #EEEEEE;
+    transition: .5s;
+  }
+.changeTxt{
+    color: black !important;
+    transition: .9s;
+  }
+  .changeTxt:hover{
+    color: #FF8F00 !important;
+  }
+ .line .changeLogo{
+    /* color: black !important; */
+    stroke: black !important;
+    transition: .9s;
+  }

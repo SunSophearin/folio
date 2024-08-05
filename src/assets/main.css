@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    height: 45px;
+    background-color: black;
+}
+.clickheader{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    z-index: 4000;
+}
+@media (max-width: 575.98px) {}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header{
+        height: 61px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header{
+        height: 65px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header{
+        height: 61px;
+    }
+}

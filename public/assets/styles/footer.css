@@ -1,0 +1,67 @@
+.logo-footer{
+    padding-block: 20px;
+}
+.logo-footer h4{
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+.logo-footer ul li{
+    padding-block: 8px;
+}
+.logo-footer ul li span{
+    font-family: "Montserrat", sans-serif;
+}
+.logo-footer ul li {
+    padding-block: 3px;
+}
+.more-footer{
+    padding-block: 20px;
+}
+
+.more-footer h4{
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+.more-footer ul{
+    margin: 0;
+    padding: 0;
+}
+.more-footer ul li {
+    padding-block: 3px;
+}
+.more-footer ul li a{
+    display: inline-block;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.more-footer ul li a:hover{
+    color:#6b7b75 ;
+}
+.socail-footer{
+    padding-block: 20px;
+}
+.socail-footer h4{
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+.socail-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.socail-footer ul{
+    display: flex;
+}
+.socail-footer ul li{
+    
+    padding: 8px;
+}
+.socail-footer ul li a img{
+    width: 40px;
+}
+.socail-footer ul li a img:hover{
+    transform: scale(0.9);
+}
