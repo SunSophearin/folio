@@ -8,10 +8,10 @@
                     <li ><a  href="https://www.facebook.com/zi.rin.75?mibextid=ZbWKwL" >
                         <img src="../assets/img/fb.png" alt="" >
                     </a></li>
-                    <li><a href="https://www.facebook.com/zi.rin.75?mibextid=ZbWKwL">
+                    <li><a href="https://www.instagram.com/zi.rin?igsh=ZGUzMzM3NWJiOQ==">
                         <img src="../assets/img/ig.png" alt="">
                     </a></li>
-                    <li><a href="https://www.facebook.com/zi.rin.75?mibextid=ZbWKwL">
+                    <li><a href="https://t.me/Sunsophearin">
                         <img src="../assets/img/tele.png" alt="">
                     </a></li>
                     <li><a href="https://github.com/SunSophearin?tab=overview&from=2024-06-01&to=2024-06-30">
