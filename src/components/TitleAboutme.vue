@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xxl-12 col-xl-12 col-lg-12 title-aboutme">
                 <h1>
-                    About us
+                    About Me
                 </h1>
                 <h2>You can call me <span style="color: red;">RedEye</span>. </h2>
                 <div class="img-box">

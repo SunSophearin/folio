@@ -34,7 +34,7 @@ onMounted(()=>{
         </div>
     </div>
     <Detailproject/>
-    <Socail style="margin-bottom: 70px;"/>
+    <!-- <Socail style="margin-bottom: 70px;"/> -->
     <Footer/>
     <scrollTotop/>
 </template>
